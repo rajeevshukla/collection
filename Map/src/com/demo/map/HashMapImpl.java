@@ -66,6 +66,12 @@ public class HashMapImpl {
 			System.out.println(entry.getKey() +" : "+entry.getValue());
 		}
 
+		Map<Integer, Integer> antherJobIdFailureCount=new  HashMap<Integer, Integer>();
+		  antherJobIdFailureCount.put(345, 9090);
+		jobIdFailureCount.putAll(antherJobIdFailureCount);
+
+		System.out.println(jobIdFailureCount);
+		System.out.println("Size of Map :"+jobIdFailureCount.size());
 
 	}
 }
